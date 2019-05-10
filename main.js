@@ -43,7 +43,7 @@ function loopSelected() {
         } 
     } 
     Discourse1.value = selectedArray;
-	document.write(Discourse1);
+	//document.write(Discourse1);
 }
 loopSelected();
 //Save message
@@ -78,7 +78,7 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	newMessageRef.set({
 		Comment1: Comment1,
 		Comment2: Comment2,
-		Discourse1: Discourse1,
+		Discourse1: Discourse1.value,
 		Discourse2: Discourse2
 	});
 }
