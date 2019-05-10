@@ -47,7 +47,7 @@ function getInputVal(id){
 }
  
 //Save message to firebase
-function saveMessage(name,email,phone_number,Institution,Payment,HelpRequired){
+function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef=messagesRef.push();
 	newMessageRef.set({
 		Comment1: Comment1,
