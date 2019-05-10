@@ -1,13 +1,16 @@
 
-var config = {
+ // Your web app's Firebase configuration
+  var firebaseConfig = {
     apiKey: "AIzaSyBxQUY7-aEBCMUHRdQU3cW0QXRwoGTlPDI",
     authDomain: "annotator-e263c.firebaseapp.com",
     databaseURL: "https://annotator-e263c.firebaseio.com",
     projectId: "annotator-e263c",
     storageBucket: "annotator-e263c.appspot.com",
-    messagingSenderId: "684775160149"
+    messagingSenderId: "684775160149",
+    appId: "1:684775160149:web:4065bbc47901e7d2"
   };
-  firebase.initializeApp(config);
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 var messagesRef=firebase.database().ref('Annotations');
 document.getElementById('contactForm').addEventListener('submit',submitForm);
