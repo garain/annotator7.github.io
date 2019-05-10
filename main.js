@@ -52,8 +52,8 @@ function submitForm(e){
 //Get values
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
-//var Discourse1=getInputList(this.elements['Discourse1'] );
-var Discourse2=getInputList(this.elements['Discourse2']); 
+var Discourse1=getInputList('Discourse1');
+var Discourse2=getInputList('Discourse2'); 
 
 //Save message
 saveMessage(Comment1,Comment2,Discourse1,Discourse2);
