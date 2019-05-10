@@ -13,7 +13,7 @@ import 'firebase/firestore';
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-var messagesRef=firebase.firestore().ref('Annotations');
+var messagesRef=firebase.database().ref('Annotations');
 
 window.onload=function(){
   document.getElementById('contactForm').addEventListener('submit',submitForm);
