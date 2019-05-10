@@ -43,7 +43,7 @@ function loopSelected() {
         } 
     } 
     Discourse1.value = selectedArray;
-	alert(Discourse1);
+	window.alert(Discourse1);
 }
 
 //Save message
