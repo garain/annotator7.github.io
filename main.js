@@ -43,7 +43,7 @@ function loopSelected() {
         } 
     } 
     Discourse1.value = selectedArray;
-	//document.write(Discourse1);
+	document.write(count);
 }
 loopSelected();
 //Save message
