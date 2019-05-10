@@ -13,7 +13,7 @@
   firebase.initializeApp(firebaseConfig);
 
 var messagesRef=firebase.database().ref('Annotations');
-var selectedArray = new Array();
+
 window.onload=function(){
   document.getElementById('contactForm').addEventListener('submit',submitForm);
 }
@@ -31,7 +31,8 @@ var Discourse1=loopSelected('Discourse1');
 var Discourse2=loopSelected('Discourse2'); 
 	
 function loopSelected(id) { 
-    var Discourse1 = document.getElementById(id);
+    //var Discourse = document.getElementById(id);
+    var selectedArray = new Array();
     var selObj = document.getElementById(id); 
     var i;
     var count = 0;
@@ -45,7 +46,7 @@ return selectedArray;
 }
 //loopSelected();
 //Save message
-saveMessage(Comment1,Comment2,Discourse1,Discourse2,selectedArray);
+saveMessage(Comment1,Comment2,Discourse1,Discourse2);
 
 //Show alert
 document.querySelector('.alert').style.display='block';
