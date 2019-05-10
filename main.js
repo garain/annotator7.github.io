@@ -43,7 +43,7 @@ function submitForm(e){
 //Get values
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
-var Discourse1=getInputList('Discourse1');
+var Discourse1[]=getInputList('Discourse1');
 var Discourse2=getInputVal('Discourse2'); 
 
 //Save message
