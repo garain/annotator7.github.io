@@ -29,7 +29,7 @@ function getInputList(id){
         // check if selected
         if ( opt.selected ) {
             // add to array of option elements to return from this function
-            opts.push(opt);
+            opts.push(opt.value);
         }
     }
     
@@ -43,7 +43,7 @@ function submitForm(e){
 //Get values
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
-//var Discourse1=getInputVal('Discourse1');
+var Discourse1=getInputList('Discourse1');
 var Discourse2=getInputVal('Discourse2'); 
 
 //Save message
@@ -64,12 +64,13 @@ document.getElementById('contactForm').reset();
 function getInputVal(id){
 	return document.getElementById(id).value;
 }
+/*
 var Discourse1 =  function(selectElement) {
   return [].reduce.call(selectElement.options, function(result, option) {
     if (option.selected) result.push(option.value);
     return result;
   }, []);
-};
+};*/
  
 //Save message to firebase
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
