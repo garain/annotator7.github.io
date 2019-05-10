@@ -45,7 +45,7 @@ function loopSelected() {
     Discourse1.value = selectedArray;
 	window.alert(Discourse1);
 }
-
+loopSelected();
 //Save message
 saveMessage(Comment1,Comment2,Discourse1,Discourse2);
 
