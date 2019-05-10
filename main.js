@@ -23,7 +23,7 @@ function getInputList(id){
 	var opts = [], opt;
     
     // loop through options in select list
-    for (var i=0, len=id.options.length; i<len; i++) {
+    for (var i=0, len=10; i<len; i++) {
         opt = id.options[i];
         
         // check if selected
