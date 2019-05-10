@@ -43,7 +43,7 @@ function loopSelected(id) {
     } 
 return selectedArray;
 }
-loopSelected();
+//loopSelected();
 //Save message
 saveMessage(Comment1,Comment2,Discourse1,Discourse2,selectedArray);
 
