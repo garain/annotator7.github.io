@@ -13,7 +13,11 @@
   firebase.initializeApp(firebaseConfig);
 
 var messagesRef=firebase.firestore().ref('Annotations');
-document.getElementById('contactForm').addEventListener('submit',submitForm);
+
+window.onload=function(){
+  document.getElementById('contactForm').addEventListener('submit',submitForm);
+}
+
 
 
 
