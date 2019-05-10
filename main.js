@@ -1,4 +1,4 @@
-from 'firebase' import * as firebase;
+import 'firebase' as firebase;
 import 'firebase/firestore';
  // Your web app's Firebase configuration
   const firebaseConfig = {
