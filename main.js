@@ -18,15 +18,6 @@ window.onload=function(){
   document.getElementById('contactForm').addEventListener('submit',submitForm);
 }
 
-document.getElementById('contactForm').onsubmit = function(e) {
-    // reference to select list using this keyword and form elements collection
-    // no callback function used this time
-    var Discourse1 = getInputList( this.elements['Discourse1'] );
-    
-    //alert( 'The number of options selected is: ' + opts.length ); //  number of selected options
-    
-    return false; // don't return online form
-};
 
 function getInputList(id){
 	var opts = [], opt;
