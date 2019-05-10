@@ -128,3 +128,30 @@
   </body>
 
 </html>
+<!--
+	  <head>
+        <script data-require="angular.js@1.3.9" data-semver="1.3.9" src="https://code.angularjs.org/1.3.9/angular.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script type="text/javascript">
+        var app = angular.module("myClues", []);
+        app.controller("MyController", function($scope, $http) {
+            $http.get("new1.json").success(function(result) {
+                $scope.Details = result.records;
+            });
+        });
+        </script>
+    </head>
+
+    <body ng-controller="MyController">
+        <div>
+            <ul>
+                <li ng-repeat="x in Details">
+                    {{x.Name + ',' + x.City +',' + x.Country}}
+                </li>
+            </ul>
+        </div>
+    </body>
+
+//-->
