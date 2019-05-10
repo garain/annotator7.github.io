@@ -19,24 +19,6 @@ window.onload=function(){
 }
 
 
-function getInputList(id){
-	var opts = [], opt;
-    
-    // loop through options in select list
-    for (var i=0, len=10; i<len; i++) {
-        opt = id.options[i];
-        
-        // check if selected
-        if ( opt.selected ) {
-            // add to array of option elements to return from this function
-            opts.push(opt.value);
-        }
-    }
-    
-    // return array containing references to selected option elements
-    return opts;
-}
-
 //Submit form
 function submitForm(e){
  e.preventDefault();
@@ -61,6 +43,7 @@ function loopSelected() {
         } 
     } 
     Discourse1.value = selectedArray;
+	alert(Discourse1);
 }
 
 //Save message
