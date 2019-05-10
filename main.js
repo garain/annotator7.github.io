@@ -28,7 +28,7 @@ var Discourse1=getInputVal('Discourse1');
 var Discourse2=getInputVal('Discourse2'); 
 
 //Save message
-saveMessage(name,email,phone_number,Institution,Payment,HelpRequired);
+saveMessage(Comment1,Comment2,Discourse1,Discourse2);
 
 //Show alert
 document.querySelector('.alert').style.display='block';
