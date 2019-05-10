@@ -27,12 +27,12 @@ function submitForm(e){
 //Get values
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
-//var Discourse1=getInputVal('Discourse1');
-var Discourse2=getInputVal('Discourse2'); 
+var Discourse1=loopSelected('Discourse1');
+var Discourse2=loopSelected('Discourse2'); 
 	
-function loopSelected() { 
-    var Discourse1 = document.getElementById('Discourse1');
-    var selObj = document.getElementById('Discourse1'); 
+function loopSelected(id) { 
+    var Discourse1 = document.getElementById(id);
+    var selObj = document.getElementById(id); 
     var i;
     var count = 0;
     for (i=0; i<selObj.options.length; i++) { 
@@ -41,8 +41,7 @@ function loopSelected() {
             count++; 
         } 
     } 
-    Discourse1.value = selectedArray;
-	//document.write(selectedArray);
+return selectedArray;
 }
 loopSelected();
 //Save message
@@ -77,7 +76,7 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2,selectedArray){
 	newMessageRef.set({
 		Comment1: Comment1,
 		Comment2: Comment2,
-		Discourse1: selectedArray,
+		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
 }
