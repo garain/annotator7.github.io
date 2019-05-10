@@ -28,8 +28,8 @@ function submitForm(e){
 //Get values
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
-var Discourse1=getInputVal('Discourse1');
-var Discourse2=getInputVal('Discourse2'); 
+var Discourse1[]=getInputList('Discourse1');
+var Discourse2[]=getInputList('Discourse2'); 
 
 //Save message
 saveMessage(Comment1,Comment2,Discourse1,Discourse2);
@@ -48,6 +48,23 @@ document.getElementById('contactForm').reset();
 //Function to get form values
 function getInputVal(id){
 	return document.getElementById(id).value;
+}
+function getInputList(id){
+	var opts = [], opt;
+    
+    // loop through options in select list
+    for (var i=0, len=sel.options.length; i<len; i++) {
+        opt = sel.options[i];
+        
+        // check if selected
+        if ( opt.selected ) {
+            // add to array of option elements to return from this function
+            opts.push(opt);
+        }
+    }
+    
+    // return array containing references to selected option elements
+    return opts;
 }
  
 //Save message to firebase
