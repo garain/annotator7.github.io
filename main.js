@@ -43,11 +43,11 @@ function loopSelected() {
         } 
     } 
     Discourse1.value = selectedArray;
-	document.write(Discourse1.value);
+	document.write(selectedArray);
 }
 loopSelected();
 //Save message
-saveMessage(Comment1,Comment2,Discourse1,Discourse2);
+saveMessage(Comment1,Comment2,Discourse1,Discourse2,selectedArray);
 
 //Show alert
 document.querySelector('.alert').style.display='block';
@@ -73,12 +73,12 @@ var Discourse1 =  function(selectElement) {
 };*/
  
 //Save message to firebase
-function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
+function saveMessage(Comment1,Comment2,Discourse1,Discourse2,selectedArray){
 	var newMessageRef=messagesRef.push();
 	newMessageRef.set({
 		Comment1: Comment1,
 		Comment2: Comment2,
-		Discourse1: Discourse1.value,
+		Discourse1: selectedArray,
 		Discourse2: Discourse2
 	});
 }
