@@ -39,13 +39,13 @@ function getInputList(id){
 //Submit form
 function submitForm(e){
  e.preventDefault();
-var zy=getInputList('Discourse1');
-alert(zy);
+//var zy=getInputList('Discourse1');
+//alert(zy);
 //Get values
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
 var Discourse1=Array();
-var Discourse1=getInputList('Discourse1');
+var Discourse1=getInputVal('Discourse1');
 var Discourse2=getInputVal('Discourse2'); 
 
 //Save message
