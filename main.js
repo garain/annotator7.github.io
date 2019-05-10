@@ -36,6 +36,7 @@ function getInputList(id){
     // return array containing references to selected option elements
     return opts;
 }
+
 //Submit form
 function submitForm(e){
  e.preventDefault();
@@ -44,9 +45,23 @@ function submitForm(e){
 //Get values
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
-var Discourse1=Array();
-var Discourse1=getInputVal('Discourse1');
+//var Discourse1=getInputVal('Discourse1');
 var Discourse2=getInputVal('Discourse2'); 
+	
+function loopSelected() { 
+    var Discourse1 = document.getElementById('Discourse1');
+    var selectedArray = new Array();
+    var selObj = document.getElementById('Discourse1'); 
+    var i;
+    var count = 0;
+    for (i=0; i<selObj.options.length; i++) { 
+        if (selObj.options[i].selected) {
+            selectedArray[count] = selObj.options[i].value;
+            count++; 
+        } 
+    } 
+    Discourse1.value = selectedArray;
+}
 
 //Save message
 saveMessage(Comment1,Comment2,Discourse1,Discourse2);
