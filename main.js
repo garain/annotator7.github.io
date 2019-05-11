@@ -40,13 +40,10 @@ drawData3();
 }
 	/*
 document.getElementById('submit').onclick=submitForm;
-document.getElementById('next').onclick=nextComment;
  document.getElementById('contactForm').addEventListener('submit',submitForm);
 document.getElementById('submit2').onclick=submitForm2;
-document.getElementById('next2').onclick=nextComment2;
 document.getElementById('contactForm2').addEventListener('submit',submitForm2);
 document.getElementById('submit3').onclick=submitForm3;
-document.getElementById('next3').onclick=nextComment3;
 
 document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 
@@ -60,6 +57,7 @@ function setup(file,fun) {
   loadJSON(file, fun);
 }
 */
+
  document.getElementById('submit').onclick=submitForm;
 document.getElementById('submit2').onclick=submitForm2;
 document.getElementById('submit3').onclick=submitForm3;
@@ -90,16 +88,16 @@ var output2=document.getElementById('Comment2.3');
 drawData1();
 drawData2();
 drawData3();
-	
+document.getElementById('next').addEventListener("click", nextComment);
+document.getElementById('next2').addEventListener("click", nextComment2);
+document.getElementById('next3').addEventListener("click", nextComment3);	
 /*
 
 output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 
 
 }
-document.getElementById('next').addEventListener("click", nextComment);
-document.getElementById('next2').addEventListener("click", nextComment2);
-document.getElementById('next3').addEventListener("click", nextComment3);
+
 //Submit form
 function submitForm(e){
  e.preventDefault();
