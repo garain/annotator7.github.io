@@ -93,8 +93,8 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 function submitForm(e){
  e.preventDefault();
 //var messagesRef=firebase.database().ref('Annotations');
-var Comment1=data1.phrases[com_in1].id,
-var Comment2=data1.phrases[com_in1+1].id,
+var Comment1=data1.phrases[com_in1].id;
+var Comment2=data1.phrases[com_in1+1].id;
 var Discourse1=loopSelected('Discourse1');
 var Discourse2=loopSelected('Discourse2'); 
 	
