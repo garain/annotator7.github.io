@@ -58,8 +58,8 @@ function drawData1() {
 var data=data1;
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
- output1.innerHTML=data.phrases[1].body;
- output2.innerHTML=data.phrases[1].body;
+ output1.innerHTML=data.phrases[com_in1].body;
+ output2.innerHTML=data.phrases[com_in1].body;
 }
 
 function drawData2() {
