@@ -119,8 +119,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef=firebase.database().ref('Annotations').push();
 	newMessageRef.set({
-		Comment1: Comment1,
-		Comment2: Comment2,
+		Comment1: data1.id,
+		Comment2: data1.id,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
@@ -172,8 +172,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef2=firebase.database().ref('Annotations2').push();
 	newMessageRef2.set({
-		Comment1: Comment1,
-		Comment2: Comment2,
+		Comment1: data2.id,
+		Comment2: data2.id,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
@@ -226,8 +226,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef3=firebase.database().ref('Annotations3').push();
 	newMessageRef3.set({
-		Comment1: Comment1,
-		Comment2: Comment2,
+		Comment1: data3.id,
+		Comment2: data3.id,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
