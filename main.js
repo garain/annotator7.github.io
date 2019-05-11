@@ -13,7 +13,9 @@
   firebase.initializeApp(firebaseConfig);
 
 var com_in1=0,com_in2=0,com_in3=0,Len_max1=data1.phrases.length,Len_max2=data2.phrases.length,Len_max3=data3.phrases.length;
-
+document.getElementById('next').addEventListener("click", nextComment);
+document.getElementById('next2').addEventListener("click", nextComment2);
+document.getElementById('next3').addEventListener("click", nextComment3);
 window.onload=function(){
 	/*
 	document.getElementById('contactForm').getElementById("submit").onclick=submitForm;
@@ -63,9 +65,7 @@ function setup(file,fun) {
  document.getElementById('submit').onclick=submitForm;
 document.getElementById('submit2').onclick=submitForm2;
 document.getElementById('submit3').onclick=submitForm3;
-document.getElementById('next').addEventListener("click", nextComment);
-document.getElementById('next2').addEventListener("click", nextComment2);
-document.getElementById('next3').addEventListener("click", nextComment3);
+
 function drawData1() {
 var data=data1;
 var output1=document.getElementById('Comment1');
