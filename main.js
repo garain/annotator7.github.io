@@ -29,12 +29,12 @@ document.getElementById('submit3').onclick=submitForm3;
   //document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 }
 
-var jcontent={
-"First":"Avishek",
-"Last":"Garain"
+var Content={
+"FirstName":"Avishek",
+"LastName":"Garain"
 }
 var output=document.getElementById('Comment1');
-output.innerHTML=jcontent.First;
+output.innerHTML=Content.FirstName+' '+Content.LastName;
 //Submit form
 function submitForm(e){
  e.preventDefault();
