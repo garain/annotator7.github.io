@@ -20,15 +20,15 @@ window.onload=function(){
 	document.getElementById('contactForm2').getElementById("submit2").onclick=submitForm2;
 	document.getElementById('contactForm3').getElementById("submit3").onclick=submitForm3;
 */
-function nextComment(e){
+function nextComment(){
 if(com_in1<Len_max1-1)
 com_in1=com_in1+1;
 } 
-function nextComment2(e){
+function nextComment2(){
 if(com_in2<Len_max2-1)
 com_in2=com_in2+1;
 } 
-function nextComment3(e){
+function nextComment3(){
 if(com_in3<Len_max3-1)
 com_in3=com_in3+1;
 }
