@@ -87,7 +87,7 @@ drawData3();
 output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 
 
-
+}
 
 //Submit form
 function submitForm(e){
@@ -250,4 +250,3 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	});
 }
 
-}
