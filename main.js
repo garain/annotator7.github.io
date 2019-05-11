@@ -39,7 +39,7 @@ function setup(file,fun) {
 }
 */
 function drawData1() {
-var data=require("data1.json");
+var data=JSON.parse("data1.json");
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
  output1.innerHTML=data.body;
@@ -47,7 +47,7 @@ var output2=document.getElementById('Comment2');
 }
 
 function drawData2() {
-	var data=require("data2.json");
+	var data=JSON.parse("data2.json");
 var output1=document.getElementById('Comment1.2');
 var output2=document.getElementById('Comment2.2');
  output1.innerHTML=data.body;
@@ -55,7 +55,7 @@ var output2=document.getElementById('Comment2.2');
 }
 
 function drawData3() {
-	var data=require("data3.json");
+	var data=JSON.parse("data3.json");
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
  output1.innerHTML=data.body;
