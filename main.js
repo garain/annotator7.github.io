@@ -20,7 +20,18 @@ window.onload=function(){
 	document.getElementById('contactForm2').getElementById("submit2").onclick=submitForm2;
 	document.getElementById('contactForm3').getElementById("submit3").onclick=submitForm3;
 */
-
+function nextComment(e){
+if(com_in1<Len_max1-1)
+com_in1=com_in1+1;
+} 
+function nextComment2(e){
+if(com_in2<Len_max2-1)
+com_in2=com_in2+1;
+} 
+function nextComment3(e){
+if(com_in3<Len_max3-1)
+com_in3=com_in3+1;
+}
 document.getElementById('submit').onclick=submitForm;
 document.getElementById('next').onclick=nextComment;
   //document.getElementById('contactForm').addEventListener('submit',submitForm);
@@ -41,18 +52,7 @@ function setup(file,fun) {
   loadJSON(file, fun);
 }
 */
-function nextComment(e){
-if(com_in1<Len_max1-1)
-com_in1+=1;
-} 
-function nextComment2(e){
-if(com_in2<Len_max2-1)
-com_in2+=1;
-} 
-function nextComment3(e){
-if(com_in3<Len_max3-1)
-com_in3+=1;
-} 
+ 
 function drawData1() {
 var data=data1;
 var output1=document.getElementById('Comment1');
