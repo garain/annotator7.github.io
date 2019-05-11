@@ -32,11 +32,11 @@ function nextComment3(e){
 if(com_in3<Len_max3-1)
 com_in3=com_in3+1;
 }
-document.getElementById('submit').onclick=submitForm;
+//document.getElementById('submit').onclick=submitForm;
 document.getElementById('next').onclick=nextComment;
   document.getElementById('contactForm').addEventListener('submit',submitForm);
-document.getElementById('submit2').onclick=submitForm2;
-//document.getElementById('next2').onclick=nextComment2;
+//document.getElementById('submit2').onclick=submitForm2;
+document.getElementById('next2').onclick=nextComment2;
 document.getElementById('contactForm2').addEventListener('submit',submitForm2);
 //document.getElementById('submit3').onclick=submitForm3;
 document.getElementById('next3').onclick=nextComment3;
