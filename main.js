@@ -27,12 +27,13 @@ document.getElementById('submit2').onclick=submitForm2;
 //document.getElementById('contactForm2').addEventListener('submit',submitForm2);
 document.getElementById('submit3').onclick=submitForm3;	
   //document.getElementById('contactForm3').addEventListener('submit',submitForm3);
+/*
 var output=document.getElementById('Comment1');
 var Content={
 "FirstName":"Avishek",
 "LastName":"Garain"
-}
-/*
+}*/
+
 function setup(file,fun) {
   createCanvas(600, 400);
   noStroke();
@@ -63,9 +64,9 @@ var output2.3=document.getElementById('Comment2.3');
 setup("data1.json",drawData1);
 setup("data2.json",drawData2);
 setup("data3.json",drawData3);
-*/
+/*
 
-output.innerHTML=Content.FirstName+' '+Content.LastName;
+output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 }
 
 
