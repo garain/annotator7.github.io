@@ -25,7 +25,7 @@ window.onload=function(){
 //Submit form
 function submitForm(e){
  e.preventDefault();
-var messagesRef=firebase.database().ref('Annotations');
+//var messagesRef=firebase.database().ref('Annotations');
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
 var Discourse1=loopSelected('Discourse1');
@@ -67,7 +67,7 @@ function getInputVal(id){
  
 //Save message to firebase
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
-	var newMessageRef=messagesRef.push();
+	var newMessageRef=firebase.database().ref('Annotations').push();
 	newMessageRef.set({
 		Comment1: Comment1,
 		Comment2: Comment2,
@@ -78,7 +78,7 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 
 function submitForm2(e){
  e.preventDefault();
-	var messagesRef2=firebase.database().ref('Annotations2');
+	//var messagesRef2=firebase.database().ref('Annotations2');
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
 var Discourse1=loopSelected('Discourse1');
@@ -120,7 +120,7 @@ function getInputVal(id){
  
 //Save message to firebase
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
-	var newMessageRef2=messagesRef2.push();
+	var newMessageRef2=firebase.database().ref('Annotations2').push();
 	newMessageRef2.set({
 		Comment1: Comment1,
 		Comment2: Comment2,
@@ -131,7 +131,7 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 
 function submitForm3(e){
  e.preventDefault();
-	var messagesRef3=firebase.database().ref('Annotations3');
+	//var messagesRef3=firebase.database().ref('Annotations3');
 
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
@@ -174,7 +174,7 @@ function getInputVal(id){
  
 //Save message to firebase
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
-	var newMessageRef3=messagesRef3.push();
+	var newMessageRef3=firebase.database().ref('Annotations3').push();
 	newMessageRef3.set({
 		Comment1: Comment1,
 		Comment2: Comment2,
