@@ -57,6 +57,25 @@ var output2=document.getElementById('Comment2.3');
  output1.innerHTML=data.phrases[com_in3].body;
  output2.innerHTML=data.phrases[com_in3+1].body;
  }
+
+ document.getElementById('submit').onclick=submitForm;
+document.getElementById('submit2').onclick=submitForm2;
+document.getElementById('submit3').onclick=submitForm3;
+//document.getElementById('submit').onclick=Id_allot;
+//document.getElementById('submit2').onclick=Id_allot2;
+//document.getElementById('submit3').onclick=Id_allot3;
+
+drawData1(com_in1);
+drawData2(com_in2);
+drawData3(com_in3);
+	
+/*
+
+output.innerHTML=Content.FirstName+' '+Content.LastName;*/
+
+
+}
+
 function nextComment(){
 if(com_in1<Len_max1-1){
 com_in1=com_in1+1;
@@ -76,23 +95,6 @@ drawData3(com_in3);
 }
 }
 
- document.getElementById('submit').onclick=submitForm;
-document.getElementById('submit2').onclick=submitForm2;
-document.getElementById('submit3').onclick=submitForm3;
-//document.getElementById('submit').onclick=Id_allot;
-//document.getElementById('submit2').onclick=Id_allot2;
-//document.getElementById('submit3').onclick=Id_allot3;
-
-drawData1(com_in1);
-drawData2(com_in2);
-drawData3(com_in3);
-	
-/*
-
-output.innerHTML=Content.FirstName+' '+Content.LastName;*/
-
-
-}
 function Id_allot(){
 var Id_com1=data1.phrases[com_in1].id;
 var Id_com2=data1.phrases[com_in1+1].id;
