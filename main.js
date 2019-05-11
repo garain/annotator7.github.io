@@ -21,16 +21,22 @@ window.onload=function(){
 	document.getElementById('contactForm3').getElementById("submit3").onclick=submitForm3;
 */
 function nextComment(){
-if(com_in1<Len_max1-1)
+if(com_in1<Len_max1-1){
 com_in1=com_in1+1;
+drawData1();
+}
 } 
 function nextComment2(){
-if(com_in2<Len_max2-1)
+if(com_in2<Len_max2-1){
 com_in2=com_in2+1;
+drawData2();
+}
 } 
 function nextComment3(){
-if(com_in3<Len_max3-1)
+if(com_in3<Len_max3-1){
 com_in3=com_in3+1;
+drawData3();
+}
 }
 	/*
 document.getElementById('submit').onclick=submitForm;
