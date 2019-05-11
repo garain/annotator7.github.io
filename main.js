@@ -75,9 +75,9 @@ var output2=document.getElementById('Comment2.3');
  document.getElementById('submit').onclick=submitForm;
 document.getElementById('submit2').onclick=submitForm2;
 document.getElementById('submit3').onclick=submitForm3;
-document.getElementById('submit').onclick=Id_allot;
-document.getElementById('submit2').onclick=Id_allot2;
-document.getElementById('submit3').onclick=Id_allot3;
+//document.getElementById('submit').onclick=Id_allot;
+//document.getElementById('submit2').onclick=Id_allot2;
+//document.getElementById('submit3').onclick=Id_allot3;
 
 drawData1(com_in1);
 drawData2(com_in2);
