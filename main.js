@@ -54,7 +54,12 @@ function setup(file,fun) {
   loadJSON(file, fun);
 }
 */
- 
+ document.getElementById('submit').onclick=submitForm;
+document.getElementById('submit2').onclick=submitForm2;
+document.getElementById('submit3').onclick=submitForm3;
+document.getElementById('next').addEventListener("click", nextComment);
+document.getElementById('next2').addEventListener("click", nextComment2);
+document.getElementById('next3').addEventListener("click", nextComment3);
 function drawData1() {
 var data=data1;
 var output1=document.getElementById('Comment1');
@@ -90,8 +95,8 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 }
 
 //Submit form
-function submitForm(){
- //e.preventDefault();
+function submitForm(e){
+ e.preventDefault();
 //var messagesRef=firebase.database().ref('Annotations');
 var Comment1=data1.phrases[com_in1].id;
 var Comment2=data1.phrases[com_in1+1].id;
@@ -143,8 +148,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	});
 }
 
-function submitForm2(){
- //e.preventDefault();
+function submitForm2(e){
+ e.preventDefault();
 	//var messagesRef2=firebase.database().ref('Annotations2');
 var Comment1=data2.phrases[com_in2].id;
 var Comment2=data2.phrases[com_in2+1].id;
@@ -196,8 +201,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	});
 }
 
-function submitForm3(){
-// e.preventDefault();
+function submitForm3(e){
+e.preventDefault();
 	//var messagesRef3=firebase.database().ref('Annotations3');
 
 var Comment1=data2.phrases[com_in3].id;
