@@ -107,8 +107,8 @@ var Id_com2=data3.phrases[com_in3+1].id;
 function submitForm(e){
  e.preventDefault();
 //var messagesRef=firebase.database().ref('Annotations');
-var Comment1=Id_com1;
-var Comment2=Id_com2;
+var Comment1=getInputVal('Comment1');
+var Comment2=getInputVal('Comment2');
 var Discourse1=loopSelected('Discourse1');
 var Discourse2=loopSelected('Discourse2'); 
 	
@@ -150,8 +150,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef=firebase.database().ref('Annotations').push();
 	newMessageRef.set({
-		Comment1: Id_com1,
-		Comment2: Id_com2,
+		Comment1: Comment1,
+		Comment2: Comment2,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
@@ -160,8 +160,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 function submitForm2(e){
  e.preventDefault();
 	//var messagesRef2=firebase.database().ref('Annotations2');
-var Comment1=Id_com1;
-var Comment2=Id_com2;
+var Comment1=getInputVal('Comment1.2');
+var Comment2=getInputVal('Comment2.2');
 var Discourse1=loopSelected('Discourse1.2');
 var Discourse2=loopSelected('Discourse2.2'); 
 	
@@ -203,8 +203,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef2=firebase.database().ref('Annotations2').push();
 	newMessageRef2.set({
-		Comment1: Id_com1,
-		Comment2: Id_com2,
+		Comment1: Comment1,
+		Comment2: Comment2,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
@@ -214,8 +214,8 @@ function submitForm3(e){
 e.preventDefault();
 	//var messagesRef3=firebase.database().ref('Annotations3');
 
-var Comment1=Id_com1;
-var Comment2=Id_com2;
+var Comment1=getInputVal('Comment1.3');
+var Comment2=getInputVal('Comment2.3');
 var Discourse1=loopSelected('Discourse1.3');
 var Discourse2=loopSelected('Discourse2.3'); 
 	
@@ -257,8 +257,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef3=firebase.database().ref('Annotations3').push();
 	newMessageRef3.set({
-		Comment1: Id_com1,
-		Comment2: Id_com2,
+		Comment1: Comment1,
+		Comment2: Comment2,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
