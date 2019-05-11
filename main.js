@@ -13,8 +13,8 @@
   firebase.initializeApp(firebaseConfig);
 
 var messagesRef=firebase.database().ref('Annotations');
-var messagesRef=firebase.database().ref('Annotations2');
-var messagesRef=firebase.database().ref('Annotations3');
+var messagesRef2=firebase.database().ref('Annotations2');
+var messagesRef3=firebase.database().ref('Annotations3');
 
 window.onload=function(){
   document.getElementById('contactForm').addEventListener('submit',submitForm);
