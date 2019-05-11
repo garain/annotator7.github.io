@@ -23,19 +23,19 @@ window.onload=function(){
 function nextComment(){
 if(com_in1<Len_max1-1){
 com_in1=com_in1+1;
-drawData1();
+drawData1(com_in1);
 }
 } 
 function nextComment2(){
 if(com_in2<Len_max2-1){
 com_in2=com_in2+1;
-drawData2();
+drawData2(com_in2);
 }
 } 
 function nextComment3(){
 if(com_in3<Len_max3-1){
 com_in3=com_in3+1;
-drawData3();
+drawData3(com_in3);
 }
 }
 	/*
@@ -62,7 +62,7 @@ function setup(file,fun) {
 document.getElementById('submit2').onclick=submitForm2;
 document.getElementById('submit3').onclick=submitForm3;
 
-function drawData1() {
+function drawData1(com_in1) {
 var data=data1;
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
@@ -70,7 +70,7 @@ var output2=document.getElementById('Comment2');
  output2.innerHTML=data.phrases[com_in1+1].body;
 }
 
-function drawData2() {
+function drawData2(com_in2) {
 	var data=data2;
 var output1=document.getElementById('Comment1.2');
 var output2=document.getElementById('Comment2.2');
@@ -78,16 +78,16 @@ var output2=document.getElementById('Comment2.2');
  output2.innerHTML=data.phrases[com_in2+1].body;
 }
 
-function drawData3() {
+function drawData3(com_in3) {
 	var data=data3;
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
  output1.innerHTML=data.phrases[com_in3].body;
  output2.innerHTML=data.phrases[com_in3+1].body;
  }
-drawData1();
-drawData2();
-drawData3();
+drawData1(com_in1);
+drawData2(com_in2);
+drawData3(com_in3);
 document.getElementById('next').addEventListener("click", nextComment);
 document.getElementById('next2').addEventListener("click", nextComment2);
 document.getElementById('next3').addEventListener("click", nextComment3);	
