@@ -13,7 +13,41 @@
   firebase.initializeApp(firebaseConfig);
 
 var com_in1=0,com_in2=0,com_in3=0,Len_max1=data1.phrases.length,Len_max2=data2.phrases.length,Len_max3=data3.phrases.length;
-function drawData1(com_in1) {
+function nextComment(){
+if(com_in1<Len_max1-1){
+com_in1=com_in1+1;
+drawData1(com_in1);
+}
+} 
+function nextComment2(){
+if(com_in2<Len_max2-1){
+com_in2=com_in2+1;
+drawData2(com_in2);
+}
+} 
+function nextComment3(){
+if(com_in3<Len_max3-1){
+com_in3=com_in3+1;
+drawData3(com_in3);
+}
+}
+window.onload=function(){
+	/*
+	document.getElementById('contactForm').getElementById("submit").onclick=submitForm;
+	document.getElementById('contactForm2').getElementById("submit2").onclick=submitForm2;
+	document.getElementById('contactForm3').getElementById("submit3").onclick=submitForm3;
+*/
+	/*
+document.getElementById('submit').onclick=submitForm;
+ document.getElementById('contactForm').addEventListener('submit',submitForm);
+document.getElementById('submit2').onclick=submitForm2;
+document.getElementById('contactForm2').addEventListener('submit',submitForm2);
+document.getElementById('submit3').onclick=submitForm3;
+
+document.getElementById('contactForm3').addEventListener('submit',submitForm3);
+
+*/
+	function drawData1(com_in1) {
 var data=data1;
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
@@ -36,50 +70,7 @@ var output2=document.getElementById('Comment2.3');
  output1.innerHTML=data.phrases[com_in3].body;
  output2.innerHTML=data.phrases[com_in3+1].body;
  }
-function nextComment(){
-if(com_in1<Len_max1-1){
-com_in1=com_in1+1;
-drawData1(com_in1);
-}
-} 
-function nextComment2(){
-if(com_in2<Len_max2-1){
-com_in2=com_in2+1;
-drawData2(com_in2);
-}
-} 
-function nextComment3(){
-if(com_in3<Len_max3-1){
-com_in3=com_in3+1;
-drawData3(com_in3);
-}
-}
 
-window.onload=function(){
-	/*
-	document.getElementById('contactForm').getElementById("submit").onclick=submitForm;
-	document.getElementById('contactForm2').getElementById("submit2").onclick=submitForm2;
-	document.getElementById('contactForm3').getElementById("submit3").onclick=submitForm3;
-*/
-	/*
-document.getElementById('submit').onclick=submitForm;
- document.getElementById('contactForm').addEventListener('submit',submitForm);
-document.getElementById('submit2').onclick=submitForm2;
-document.getElementById('contactForm2').addEventListener('submit',submitForm2);
-document.getElementById('submit3').onclick=submitForm3;
-
-document.getElementById('contactForm3').addEventListener('submit',submitForm3);
-
-var output=document.getElementById('Comment1');
-var Content={
-"FirstName":"Avishek",
-"LastName":"Garain"
-}
-
-function setup(file,fun) {
-  loadJSON(file, fun);
-}
-*/
 
  document.getElementById('submit').onclick=submitForm;
 document.getElementById('submit2').onclick=submitForm2;
@@ -98,10 +89,7 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 
 
 }
-drawData1(com_in1);
-drawData2(com_in2);
-drawData3(com_in3);
-console.log(com_in1);
+
 //Submit form
 function submitForm(e){
  e.preventDefault();
