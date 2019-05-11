@@ -32,6 +32,38 @@ var Content={
 "FirstName":"Avishek",
 "LastName":"Garain"
 }
+/*
+function setup(file,fun) {
+  createCanvas(600, 400);
+  noStroke();
+  textSize(20);
+  loadJSON(file, fun);
+}
+
+function drawData1(data) {
+var output1=document.getElementById('Comment1');
+var output2=document.getElementById('Comment2');
+ output1.innerHTML=data.body;
+ output2.innerHTML=data.body;
+}
+
+function drawData2(data) {
+var output1.2=document.getElementById('Comment1.2');
+var output2.2=document.getElementById('Comment2.2');
+ output1.2.innerHTML=data.body;
+ output2.2.innerHTML=data.body;
+}
+
+function drawData3(data) {
+var output1.3=document.getElementById('Comment1.3');
+var output2.3=document.getElementById('Comment2.3');
+ output1.3.innerHTML=data.body;
+ output2.3.innerHTML=data.body;
+ }
+setup("data1.json",drawData1);
+setup("data2.json",drawData2);
+setup("data3.json",drawData3);
+*/
 
 output.innerHTML=Content.FirstName+' '+Content.LastName;
 }
