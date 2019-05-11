@@ -16,3 +16,4 @@ var data={
 }
 //For accesing data
 //data.employees[2].firstName;
+//No. of elements=data.employees[2].firstName;
