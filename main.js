@@ -32,38 +32,43 @@ var output=document.getElementById('Comment1');
 var Content={
 "FirstName":"Avishek",
 "LastName":"Garain"
-}*/
+}
 
 function setup(file,fun) {
   loadJSON(file, fun);
 }
-
-function drawData1(data) {
+*/
+function drawData1() {
+var data=require("data1.json");
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
  output1.innerHTML=data.body;
  output2.innerHTML=data.body;
 }
 
-function drawData2(data) {
+function drawData2() {
+	var data=require("data2.json");
 var output1=document.getElementById('Comment1.2');
 var output2=document.getElementById('Comment2.2');
  output1.innerHTML=data.body;
  output2.innerHTML=data.body;
 }
 
-function drawData3(data) {
+function drawData3() {
+	var data=require("data3.json");
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
  output1.innerHTML=data.body;
  output2.innerHTML=data.body;
  }
-setup("data1.json",drawData1);
-setup("data2.json",drawData2);
-setup("data3.json",drawData3);
+drawData1();
+drawData2();
+drawData3();
+	
 /*
 
 output.innerHTML=Content.FirstName+' '+Content.LastName;*/
+
 }
 
 
