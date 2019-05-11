@@ -12,9 +12,8 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-var messagesRef=firebase.database().ref('Annotations');
-var messagesRef2=firebase.database().ref('Annotations2');
-var messagesRef3=firebase.database().ref('Annotations3');
+
+
 
 window.onload=function(){
   document.getElementById('contactForm').addEventListener('submit',submitForm);
@@ -26,6 +25,7 @@ window.onload=function(){
 //Submit form
 function submitForm(e){
  e.preventDefault();
+var messagesRef=firebase.database().ref('Annotations');
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
 var Discourse1=loopSelected('Discourse1');
@@ -78,6 +78,7 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 
 function submitForm2(e){
  e.preventDefault();
+	var messagesRef2=firebase.database().ref('Annotations2');
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
 var Discourse1=loopSelected('Discourse1');
@@ -130,6 +131,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 
 function submitForm3(e){
  e.preventDefault();
+	var messagesRef3=firebase.database().ref('Annotations3');
+
 var Comment1=getInputVal('Comment1');
 var Comment2=getInputVal('Comment2');
 var Discourse1=loopSelected('Discourse1');
