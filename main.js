@@ -32,15 +32,17 @@ function nextComment3(){
 if(com_in3<Len_max3-1)
 com_in3=com_in3+1;
 }
-//document.getElementById('submit').onclick=submitForm;
+	/*
+document.getElementById('submit').onclick=submitForm;
 document.getElementById('next').onclick=nextComment;
-  document.getElementById('contactForm').addEventListener('submit',submitForm);
-//document.getElementById('submit2').onclick=submitForm2;
+//  document.getElementById('contactForm').addEventListener('submit',submitForm);
+document.getElementById('submit2').onclick=submitForm2;
 document.getElementById('next2').onclick=nextComment2;
-document.getElementById('contactForm2').addEventListener('submit',submitForm2);
-//document.getElementById('submit3').onclick=submitForm3;
+//document.getElementById('contactForm2').addEventListener('submit',submitForm2);
+document.getElementById('submit3').onclick=submitForm3;
 document.getElementById('next3').onclick=nextComment3;
-  document.getElementById('contactForm3').addEventListener('submit',submitForm3);
+*/
+  //document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 /*
 var output=document.getElementById('Comment1');
 var Content={
@@ -91,8 +93,8 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 function submitForm(e){
  e.preventDefault();
 //var messagesRef=firebase.database().ref('Annotations');
-var Comment1=getInputVal('Comment1');
-var Comment2=getInputVal('Comment2');
+var Comment1=data1.phrases[com_in1].id,
+var Comment2=data1.phrases[com_in1+1].id,
 var Discourse1=loopSelected('Discourse1');
 var Discourse2=loopSelected('Discourse2'); 
 	
