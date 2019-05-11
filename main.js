@@ -28,14 +28,15 @@ document.getElementById('submit2').onclick=submitForm2;
 document.getElementById('submit3').onclick=submitForm3;	
   //document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 var output=document.getElementById('Comment1');
-}
-
 var Content={
 "FirstName":"Avishek",
 "LastName":"Garain"
 }
 
 output.innerHTML=Content.FirstName+' '+Content.LastName;
+}
+
+
 //Submit form
 function submitForm(e){
  e.preventDefault();
