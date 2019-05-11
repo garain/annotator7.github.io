@@ -75,7 +75,9 @@ var output2=document.getElementById('Comment2.3');
  document.getElementById('submit').onclick=submitForm;
 document.getElementById('submit2').onclick=submitForm2;
 document.getElementById('submit3').onclick=submitForm3;
-
+document.getElementById('submit').onclick=Id_allot;
+document.getElementById('submit2').onclick=Id_allot2;
+document.getElementById('submit3').onclick=Id_allot3;
 
 drawData1(com_in1);
 drawData2(com_in2);
@@ -89,13 +91,24 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 
 
 }
-
+function Id_allot(){
+var Id_com1=data1.phrases[com_in1].id;
+var Id_com2=data1.phrases[com_in1+1].id;
+}
+function Id_allot2(){
+var Id_com1=data2.phrases[com_in2].id;
+var Id_com2=data2.phrases[com_in2+1].id;
+}
+function Id_allot3(){
+var Id_com1=data3.phrases[com_in3].id;
+var Id_com2=data3.phrases[com_in3+1].id;
+}
 //Submit form
 function submitForm(e){
  e.preventDefault();
 //var messagesRef=firebase.database().ref('Annotations');
-var Comment1=data1.phrases[com_in1].id;
-var Comment2=data1.phrases[com_in1+1].id;
+var Comment1=Id_com1;
+var Comment2=Id_com2;
 var Discourse1=loopSelected('Discourse1');
 var Discourse2=loopSelected('Discourse2'); 
 	
@@ -137,8 +150,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef=firebase.database().ref('Annotations').push();
 	newMessageRef.set({
-		Comment1: data1.phrases[com_in1].id,
-		Comment2: data1.phrases[com_in1+1].id,
+		Comment1: Id_com1,
+		Comment2: Id_com2,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
@@ -147,8 +160,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 function submitForm2(e){
  e.preventDefault();
 	//var messagesRef2=firebase.database().ref('Annotations2');
-var Comment1=data2.phrases[com_in2].id;
-var Comment2=data2.phrases[com_in2+1].id;
+var Comment1=Id_com1;
+var Comment2=Id_com2;
 var Discourse1=loopSelected('Discourse1.2');
 var Discourse2=loopSelected('Discourse2.2'); 
 	
@@ -190,8 +203,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef2=firebase.database().ref('Annotations2').push();
 	newMessageRef2.set({
-		Comment1: data2.phrases[com_in2].id,
-		Comment2: data2.phrases[com_in2+1].id,
+		Comment1: Id_com1,
+		Comment2: Id_com2,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
@@ -201,8 +214,8 @@ function submitForm3(e){
 e.preventDefault();
 	//var messagesRef3=firebase.database().ref('Annotations3');
 
-var Comment1=data2.phrases[com_in3].id;
-var Comment2=data2.phrases[com_in3+1].id;
+var Comment1=Id_com1;
+var Comment2=Id_com2;
 var Discourse1=loopSelected('Discourse1.3');
 var Discourse2=loopSelected('Discourse2.3'); 
 	
@@ -244,8 +257,8 @@ function getInputVal(id){
 function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef3=firebase.database().ref('Annotations3').push();
 	newMessageRef3.set({
-		Comment1: data3.phrases[com_in3].id,
-		Comment2: data3.phrases[com_in3+1].id,
+		Comment1: Id_com1,
+		Comment2: Id_com2,
 		Discourse1: Discourse1,
 		Discourse2: Discourse2
 	});
