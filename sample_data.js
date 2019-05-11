@@ -14,3 +14,5 @@ var data={
         }
     ]
 }
+//For accesing data
+//data.employees[2].firstName;
