@@ -35,9 +35,6 @@ var Content={
 }*/
 
 function setup(file,fun) {
-  createCanvas(600, 400);
-  noStroke();
-  textSize(20);
   loadJSON(file, fun);
 }
 
