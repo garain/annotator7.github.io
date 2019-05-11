@@ -34,13 +34,13 @@ com_in3=com_in3+1;
 }
 document.getElementById('submit').onclick=submitForm;
 document.getElementById('next').onclick=nextComment;
-  //document.getElementById('contactForm').addEventListener('submit',submitForm);
+  document.getElementById('contactForm').addEventListener('submit',submitForm);
 document.getElementById('submit2').onclick=submitForm2;
-document.getElementById('next2').onclick=nextComment2;
-//document.getElementById('contactForm2').addEventListener('submit',submitForm2);
-document.getElementById('submit3').onclick=submitForm3;
+//document.getElementById('next2').onclick=nextComment2;
+document.getElementById('contactForm2').addEventListener('submit',submitForm2);
+//document.getElementById('submit3').onclick=submitForm3;
 document.getElementById('next3').onclick=nextComment3;
-  //document.getElementById('contactForm3').addEventListener('submit',submitForm3);
+  document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 /*
 var output=document.getElementById('Comment1');
 var Content={
