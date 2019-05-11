@@ -16,9 +16,13 @@
 
 
 window.onload=function(){
-  document.getElementById('contactForm').addEventListener('submit',submitForm);
-  document.getElementById('contactForm2').addEventListener('submit2',submitForm2);
-  document.getElementById('contactForm3').addEventListener('submit3',submitForm3);
+	document.getElementById('contactForm').getElementById("submit").onclick=submitForm);
+	document.getElementById('contactForm2').getElementById("submit2").onclick=submitForm2);
+	document.getElementById('contactForm3').getElementById("submit3").onclick=submitForm3);
+
+  //document.getElementById('contactForm').addEventListener('submit',submitForm);
+  //document.getElementById('contactForm2').addEventListener('submit',submitForm2);
+  //document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 }
 
 
