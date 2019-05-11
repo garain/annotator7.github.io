@@ -79,10 +79,10 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 function submitForm2(e){
  e.preventDefault();
 	//var messagesRef2=firebase.database().ref('Annotations2');
-var Comment1=getInputVal('Comment1');
-var Comment2=getInputVal('Comment2');
-var Discourse1=loopSelected('Discourse1');
-var Discourse2=loopSelected('Discourse2'); 
+var Comment1=getInputVal('Comment1.2');
+var Comment2=getInputVal('Comment2.2');
+var Discourse1=loopSelected('Discourse1.2');
+var Discourse2=loopSelected('Discourse2.2'); 
 	
 function loopSelected(id) { 
     var selectedArray = new Array();
@@ -133,10 +133,10 @@ function submitForm3(e){
  e.preventDefault();
 	//var messagesRef3=firebase.database().ref('Annotations3');
 
-var Comment1=getInputVal('Comment1');
-var Comment2=getInputVal('Comment2');
-var Discourse1=loopSelected('Discourse1');
-var Discourse2=loopSelected('Discourse2'); 
+var Comment1=getInputVal('Comment1.3');
+var Comment2=getInputVal('Comment2.3');
+var Discourse1=loopSelected('Discourse1.3');
+var Discourse2=loopSelected('Discourse2.3'); 
 	
 function loopSelected(id) { 
     var selectedArray = new Array();
