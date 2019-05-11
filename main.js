@@ -16,13 +16,19 @@
 
 
 window.onload=function(){
+	/*
 	document.getElementById('contactForm').getElementById("submit").onclick=submitForm;
 	document.getElementById('contactForm2').getElementById("submit2").onclick=submitForm2;
 	document.getElementById('contactForm3').getElementById("submit3").onclick=submitForm3;
-
-  //document.getElementById('contactForm').addEventListener('submit',submitForm);
-  //document.getElementById('contactForm2').addEventListener('submit',submitForm2);
-  //document.getElementById('contactForm3').addEventListener('submit',submitForm3);
+*/
+if(document.getElementById('submit').onclick==True){
+  document.getElementById('contactForm').addEventListener('submit',submitForm);
+}
+	else if(document.getElementById('submit2').onclick==True){
+	document.getElementById('contactForm2').addEventListener('submit',submitForm2);
+	}
+	else
+  document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 }
 
 
