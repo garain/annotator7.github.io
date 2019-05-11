@@ -30,7 +30,11 @@ document.getElementById('submit3').onclick=submitForm3;
 document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 
 */
-	function drawData1(com_in1) {
+	
+document.getElementById('next').addEventListener("click", nextComment);
+document.getElementById('next2').addEventListener("click", nextComment2);
+document.getElementById('next3').addEventListener("click", nextComment3);
+function drawData1(com_in1) {
 var data=data1;
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
@@ -82,9 +86,7 @@ document.getElementById('submit3').onclick=submitForm3;
 drawData1(com_in1);
 drawData2(com_in2);
 drawData3(com_in3);
-document.getElementById('next').addEventListener("click", nextComment);
-document.getElementById('next2').addEventListener("click", nextComment2);
-document.getElementById('next3').addEventListener("click", nextComment3);	
+	
 /*
 
 output.innerHTML=Content.FirstName+' '+Content.LastName;*/
