@@ -101,6 +101,7 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 drawData1(com_in1);
 drawData2(com_in2);
 drawData3(com_in3);
+console.log(com_in1);
 //Submit form
 function submitForm(e){
  e.preventDefault();
