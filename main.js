@@ -90,8 +90,8 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 }
 
 //Submit form
-function submitForm(e){
- e.preventDefault();
+function submitForm(){
+ //e.preventDefault();
 //var messagesRef=firebase.database().ref('Annotations');
 var Comment1=data1.phrases[com_in1].id;
 var Comment2=data1.phrases[com_in1+1].id;
@@ -143,8 +143,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	});
 }
 
-function submitForm2(e){
- e.preventDefault();
+function submitForm2(){
+ //e.preventDefault();
 	//var messagesRef2=firebase.database().ref('Annotations2');
 var Comment1=data2.phrases[com_in2].id;
 var Comment2=data2.phrases[com_in2+1].id;
@@ -196,8 +196,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 	});
 }
 
-function submitForm3(e){
- e.preventDefault();
+function submitForm3(){
+// e.preventDefault();
 	//var messagesRef3=firebase.database().ref('Annotations3');
 
 var Comment1=data2.phrases[com_in3].id;
