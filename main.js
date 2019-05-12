@@ -34,6 +34,9 @@ document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 document.getElementById('next').addEventListener("click", nextComment);
 document.getElementById('next2').addEventListener("click", nextComment2);
 document.getElementById('next3').addEventListener("click", nextComment3);
+document.getElementById('Page1b').addEventListener("click", toComment);
+document.getElementById('Page2b').addEventListener("click", toComment2);
+document.getElementById('Page3b').addEventListener("click", toComment3);
 function drawData1() {
 var data=data1;
 var output1=document.getElementById('Comment1');
@@ -92,6 +95,22 @@ console.log(complete.get_level3());
 drawData3();
 }
 }
+
+function toComment(e){
+e.preventDefault();
+var pa1=parseInt(document.getElementById('Page1').value,10);
+complete.set_level2(pa1+1);
+} 
+function toComment2(e){
+e.preventDefault();
+var pa2=parseInt(document.getElementById('Page2').value,10);
+complete.set_level2(pa2+1);
+} 
+function toComment3(e){
+e.preventDefault();
+var pa3=parseInt(document.getElementById('Page3').value,10);
+complete.set_level2(pa3+1);
+} 
 	
 /*
 
