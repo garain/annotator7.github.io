@@ -38,24 +38,24 @@ function drawData1() {
 var data=data1;
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
- output1.innerHTML=data.phrases[complete.com_in1].body;
- output2.innerHTML=data.phrases[complete.com_in1+1].body;
+ output1.innerHTML=data.phrases[complete.get_level1()].body;
+ output2.innerHTML=data.phrases[complete.get_level1()+1].body;
 }
 
 function drawData2() {
 	var data=data2;
 var output1=document.getElementById('Comment1.2');
 var output2=document.getElementById('Comment2.2');
- output1.innerHTML=data.phrases[complete.com_in2].body;
- output2.innerHTML=data.phrases[complete.com_in2+1].body;
+ output1.innerHTML=data.phrases[complete.get_level2()].body;
+ output2.innerHTML=data.phrases[complete.get_level2()+1].body;
 }
 
 function drawData3() {
 	var data=data3;
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
- output1.innerHTML=data.phrases[complete.com_in3].body;
- output2.innerHTML=data.phrases[complete.com_in3+1].body;
+ output1.innerHTML=data.phrases[complete.get_level3()].body;
+ output2.innerHTML=data.phrases[complete.get_level3()+1].body;
  }
 
  document.getElementById('submit').onclick=submitForm;
