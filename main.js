@@ -68,21 +68,24 @@ document.getElementById('submit3').onclick=submitForm3;
 drawData1();
 drawData2();
 drawData3();
-function nextComment(){
+function nextComment(e){
+e.preventDefault();
 if(complete.get_level1()<Len_max1-1){
 complete.set_level1(complete.get_level1()+1);
 console.log(complete.get_level1());
 drawData1();
 }
 } 
-function nextComment2(){
+function nextComment2(e){
+e.preventDefault();
 if(complete.get_level2()<Len_max2-1){
 complete.set_level2(complete.get_level2()+1);
 console.log(complete.get_level1());
 drawData2();
 }
 } 
-function nextComment3(){
+function nextComment3(e){
+e.preventDefault();
 if(complete.get_level3()<Len_max3-1){
 complete.set_level3(complete.get_level3()+1);
 console.log(complete.get_level3());
