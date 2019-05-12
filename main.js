@@ -70,21 +70,21 @@ drawData2();
 drawData3();
 function nextComment(){
 if(complete.get_level1()<Len_max1-1){
-complete.set_level1(this.get_level1()+1);
+complete.set_level1(complete.get_level1()+1);
 console.log(complete.get_level1());
 drawData1();
 }
 } 
 function nextComment2(){
 if(complete.get_level2()<Len_max2-1){
-complete.set_level2(this.get_level2()+1);
+complete.set_level2(complete.get_level2()+1);
 console.log(complete.get_level1());
 drawData2();
 }
 } 
 function nextComment3(){
 if(complete.get_level3()<Len_max3-1){
-complete.set_level3(this.get_level3()+1);
+complete.set_level3(complete.get_level3()+1);
 console.log(complete.get_level3());
 drawData3();
 }
