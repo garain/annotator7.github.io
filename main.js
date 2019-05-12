@@ -12,7 +12,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-var com_in1=0,com_in2=0,com_in3=0,Len_max1=data1.phrases.length,Len_max2=data2.phrases.length,Len_max3=data3.phrases.length;
+var Len_max1=data1.phrases.length,Len_max2=data2.phrases.length,Len_max3=data3.phrases.length;
 
 window.onload=function(){
 	/*
@@ -38,24 +38,24 @@ function drawData1(com_in1) {
 var data=data1;
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
- output1.innerHTML=data.phrases[com_in1].body;
- output2.innerHTML=data.phrases[com_in1+1].body;
+ output1.innerHTML=data.phrases[complete.com_in1].body;
+ output2.innerHTML=data.phrases[complete.com_in1+1].body;
 }
 
 function drawData2(com_in2) {
 	var data=data2;
 var output1=document.getElementById('Comment1.2');
 var output2=document.getElementById('Comment2.2');
- output1.innerHTML=data.phrases[com_in2].body;
- output2.innerHTML=data.phrases[com_in2+1].body;
+ output1.innerHTML=data.phrases[complete.com_in2].body;
+ output2.innerHTML=data.phrases[complete.com_in2+1].body;
 }
 
 function drawData3(com_in3) {
 	var data=data3;
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
- output1.innerHTML=data.phrases[com_in3].body;
- output2.innerHTML=data.phrases[com_in3+1].body;
+ output1.innerHTML=data.phrases[complete.com_in3].body;
+ output2.innerHTML=data.phrases[complete.com_in+1].body;
  }
 
  document.getElementById('submit').onclick=submitForm;
@@ -65,9 +65,9 @@ document.getElementById('submit3').onclick=submitForm3;
 //document.getElementById('submit2').onclick=Id_allot2;
 //document.getElementById('submit3').onclick=Id_allot3;
 
-drawData1(com_in1);
-drawData2(com_in2);
-drawData3(com_in3);
+drawData1(complete.com_in1);
+drawData2(complete.com_in2);
+drawData3(complete.com_in3);
 	
 /*
 
@@ -77,24 +77,24 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 }
 
 function nextComment(){
-if(com_in1<Len_max1-1){
-com_in1=com_in1+1;
-drawData1(com_in1);
+if(complete.com_in1<Len_max1-1){
+complete.set_level1(this.com_in1+1);
+drawData1(complete.com_in1);
 }
 } 
 function nextComment2(){
-if(com_in2<Len_max2-1){
-com_in2=com_in2+1;
-drawData2(com_in2);
+if(complete.com_in2<Len_max2-1){
+complete.set_level2(this.com_in2+1);
+drawData2(complete.com_in2);
 }
 } 
 function nextComment3(){
-if(com_in3<Len_max3-1){
-com_in3=com_in3+1;
-drawData3(com_in3);
+if(complete.com_in3<Len_max3-1){
+complete.set_level3(this.com_in3+1);
+drawData3(complete.com_in3);
 }
 }
-
+/*
 function Id_allot(){
 var Id_com1=data1.phrases[com_in1].id;
 var Id_com2=data1.phrases[com_in1+1].id;
@@ -106,7 +106,7 @@ var Id_com2=data2.phrases[com_in2+1].id;
 function Id_allot3(){
 var Id_com1=data3.phrases[com_in3].id;
 var Id_com2=data3.phrases[com_in3+1].id;
-}
+}*/
 //Submit form
 function submitForm(e){
  e.preventDefault();
