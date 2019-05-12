@@ -99,6 +99,7 @@ drawData3();
 function toComment(e){
 e.preventDefault();
 var pa1=parseInt(document.getElementById('Page1').value,10);
+console.log(pa1);
 complete.set_level2(pa1-1);
 drawData1();
 } 
