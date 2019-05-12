@@ -143,7 +143,12 @@ setTimeout(function(){
 },3000);
 
 //Clear form
-document.getElementById('contactForm').reset();
+document.getElementById('Discourse1').reset();
+document.getElementById('Discourse2').reset();
+document.getElementById('Discourse1.2').reset();
+document.getElementById('Discourse2.2').reset();
+document.getElementById('Discourse1.3').reset();
+document.getElementById('Discourse2.3').reset();
  }
 //Function to get form values
 function getInputVal(id){
