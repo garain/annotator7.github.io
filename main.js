@@ -99,17 +99,17 @@ drawData3();
 function toComment(e){
 e.preventDefault();
 var pa1=parseInt(document.getElementById('Page1').value,10);
-complete.set_level2(pa1+1);
+complete.set_level2(pa1-1);
 } 
 function toComment2(e){
 e.preventDefault();
 var pa2=parseInt(document.getElementById('Page2').value,10);
-complete.set_level2(pa2+1);
+complete.set_level2(pa2-1);
 } 
 function toComment3(e){
 e.preventDefault();
 var pa3=parseInt(document.getElementById('Page3').value,10);
-complete.set_level2(pa3+1);
+complete.set_level2(pa3-1);
 } 
 	
 /*
@@ -120,19 +120,7 @@ output.innerHTML=Content.FirstName+' '+Content.LastName;*/
 }
 
 
-/*
-function Id_allot(){
-var Id_com1=data1.phrases[com_in1].id;
-var Id_com2=data1.phrases[com_in1+1].id;
-}
-function Id_allot2(){
-var Id_com1=data2.phrases[com_in2].id;
-var Id_com2=data2.phrases[com_in2+1].id;
-}
-function Id_allot3(){
-var Id_com1=data3.phrases[com_in3].id;
-var Id_com2=data3.phrases[com_in3+1].id;
-}*/
+
 //Submit form
 function submitForm(e){
  e.preventDefault();
