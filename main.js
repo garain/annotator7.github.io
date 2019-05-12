@@ -55,7 +55,7 @@ function drawData3(com_in3) {
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
  output1.innerHTML=data.phrases[complete.com_in3].body;
- output2.innerHTML=data.phrases[complete.com_in+1].body;
+ output2.innerHTML=data.phrases[complete.com_in3+1].body;
  }
 
  document.getElementById('submit').onclick=submitForm;
