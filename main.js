@@ -34,28 +34,28 @@ document.getElementById('contactForm3').addEventListener('submit',submitForm3);
 document.getElementById('next').addEventListener("click", nextComment);
 document.getElementById('next2').addEventListener("click", nextComment2);
 document.getElementById('next3').addEventListener("click", nextComment3);
-function drawData1(com_in1) {
+function drawData1() {
 var data=data1;
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
- output1.innerHTML=data.phrases[com_in1].body;
- output2.innerHTML=data.phrases[com_in1+1].body;
+ output1.innerHTML=data.phrases[complete.com_in1].body;
+ output2.innerHTML=data.phrases[complete.com_in1+1].body;
 }
 
-function drawData2(com_in2) {
+function drawData2() {
 	var data=data2;
 var output1=document.getElementById('Comment1.2');
 var output2=document.getElementById('Comment2.2');
- output1.innerHTML=data.phrases[com_in2].body;
- output2.innerHTML=data.phrases[com_in2+1].body;
+ output1.innerHTML=data.phrases[complete.com_in2].body;
+ output2.innerHTML=data.phrases[complete.com_in2+1].body;
 }
 
-function drawData3(com_in3) {
+function drawData3() {
 	var data=data3;
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
- output1.innerHTML=data.phrases[com_in3].body;
- output2.innerHTML=data.phrases[com_in3+1].body;
+ output1.innerHTML=data.phrases[complete.com_in3].body;
+ output2.innerHTML=data.phrases[complete.com_in3+1].body;
  }
 
  document.getElementById('submit').onclick=submitForm;
@@ -65,25 +65,25 @@ document.getElementById('submit3').onclick=submitForm3;
 //document.getElementById('submit2').onclick=Id_allot2;
 //document.getElementById('submit3').onclick=Id_allot3;
 
-drawData1(complete.com_in1);
-drawData2(complete.com_in2);
-drawData3(complete.com_in3);
+drawData1();
+drawData2();
+drawData3();
 function nextComment(){
 if(complete.com_in1<Len_max1-1){
 complete.set_level1(this.com_in1+1);
-drawData1(complete.com_in1);
+drawData1();
 }
 } 
 function nextComment2(){
 if(complete.com_in2<Len_max2-1){
 complete.set_level2(this.com_in2+1);
-drawData2(complete.com_in2);
+drawData2();
 }
 } 
 function nextComment3(){
 if(complete.com_in3<Len_max3-1){
 complete.set_level3(this.com_in3+1);
-drawData3(complete.com_in3);
+drawData3();
 }
 }
 	
