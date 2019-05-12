@@ -13,7 +13,7 @@
   firebase.initializeApp(firebaseConfig);
 var complete = new Complete ();
 var Len_max1=data1.phrases.length,Len_max2=data2.phrases.length,Len_max3=data3.phrases.length;
-console.log(complete.com_in1,complete.com_in2,complete.com_in3);
+//console.log(complete.com_in1,complete.com_in2,complete.com_in3);
 window.onload=function(){
 	/*
 	document.getElementById('contactForm').getElementById("submit").onclick=submitForm;
