@@ -118,8 +118,8 @@ var Id_com2=data3.phrases[com_in3+1].id;
 function submitForm(e){
  e.preventDefault();
 //var messagesRef=firebase.database().ref('Annotations');
-var Comment1=data.phrases[complete.get_level1()].id;
-var Comment2=data.phrases[complete.get_level1()+1].id;
+var Comment1=data1.phrases[complete.get_level1()].id;
+var Comment2=data1.phrases[complete.get_level1()+1].id;
 var Discourse1=loopSelected('Discourse1');
 var Discourse2=loopSelected('Discourse2'); 
 	
@@ -171,8 +171,8 @@ function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
 function submitForm2(e){
  e.preventDefault();
 	//var messagesRef2=firebase.database().ref('Annotations2');
-var Comment1=data.phrases[complete.get_level2()].id;
-var Comment2=data.phrases[complete.get_level2()+1].id;
+var Comment1=data2.phrases[complete.get_level2()].id;
+var Comment2=data2.phrases[complete.get_level2()+1].id;
 var Discourse1=loopSelected('Discourse1.2');
 var Discourse2=loopSelected('Discourse2.2'); 
 	
@@ -225,8 +225,8 @@ function submitForm3(e){
 e.preventDefault();
 	//var messagesRef3=firebase.database().ref('Annotations3');
 
-var Comment1=data.phrases[complete.get_level3()].id;
-var Comment2=data.phrases[complete.get_level3()+1].id;
+var Comment1=data3.phrases[complete.get_level3()].id;
+var Comment2=data3.phrases[complete.get_level3()+1].id;
 var Discourse1=loopSelected('Discourse1.3');
 var Discourse2=loopSelected('Discourse2.3'); 
 	
