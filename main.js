@@ -70,7 +70,7 @@ drawData2();
 drawData3();
 function nextComment(){
 if(complete.get_level1()<Len_max1-1){
-complete.set_level1(this.get_level1()1+1);
+complete.set_level1(this.get_level1()+1);
 console.log(complete.get_level1());
 drawData1();
 }
