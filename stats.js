@@ -30,4 +30,4 @@ class Complete {
     }
 }
 
-var complete = new Complete ();
+
