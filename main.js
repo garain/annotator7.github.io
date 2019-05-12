@@ -68,14 +68,6 @@ document.getElementById('submit3').onclick=submitForm3;
 drawData1(complete.com_in1);
 drawData2(complete.com_in2);
 drawData3(complete.com_in3);
-	
-/*
-
-output.innerHTML=Content.FirstName+' '+Content.LastName;*/
-
-
-}
-
 function nextComment(){
 if(complete.com_in1<Len_max1-1){
 complete.set_level1(this.com_in1+1);
@@ -94,6 +86,15 @@ complete.set_level3(this.com_in3+1);
 drawData3(complete.com_in3);
 }
 }
+	
+/*
+
+output.innerHTML=Content.FirstName+' '+Content.LastName;*/
+
+
+}
+
+
 /*
 function Id_allot(){
 var Id_com1=data1.phrases[com_in1].id;
