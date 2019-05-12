@@ -185,7 +185,7 @@ return selectedArray;
 }
 //loopSelected();
 //Save message
-saveMessage(Comment1,Comment2,Discourse1,Discourse2);
+saveMessage2(Comment1,Comment2,Discourse1,Discourse2);
 
 //Show alert
 document.querySelector('.alert').style.display='block';
@@ -205,7 +205,7 @@ function getInputVal(id){
 
  
 //Save message to firebase
-function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
+function saveMessage2(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef2=firebase.database().ref('Annotations2').push();
 	newMessageRef2.set({
 		Comment1: Comment1,
@@ -239,7 +239,7 @@ return selectedArray;
 }
 //loopSelected();
 //Save message
-saveMessage(Comment1,Comment2,Discourse1,Discourse2);
+saveMessage3(Comment1,Comment2,Discourse1,Discourse2);
 
 //Show alert
 document.querySelector('.alert').style.display='block';
@@ -259,7 +259,7 @@ function getInputVal(id){
 
  
 //Save message to firebase
-function saveMessage(Comment1,Comment2,Discourse1,Discourse2){
+function saveMessage3(Comment1,Comment2,Discourse1,Discourse2){
 	var newMessageRef3=firebase.database().ref('Annotations3').push();
 	newMessageRef3.set({
 		Comment1: Comment1,
