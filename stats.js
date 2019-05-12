@@ -1,0 +1,19 @@
+class Complete {
+    constructor (com_in1=0,com_in2=0,com_in3=0) {
+        this.com_in1 = com_in1;
+        this.com_in2 = com_in2;
+        this.com_in3 = com_in3;
+    }
+
+    get_level (com_in1,com_in2,com_in3) {
+        return this.com_in1,this.com_in2,this.com_in3;
+    }
+
+    set_level (com_in1,com_in2,com_in3) {
+        this.com_in1 = com_in1;
+        this.com_in2 = com_in2;
+        this.com_in3 = com_in3;
+    }
+}
+
+var complete = new Complete ();
