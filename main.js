@@ -12,7 +12,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 var complete = new Complete ();
-var Len_max1=data1.phrases.length,Len_max2=data2.phrases.length,Len_max3=data3.phrases.length;
+var Len_max1=data1.phrases.length,Len_max2=data2.phrases.length,Len_max3=data3.phrases.length,count1=0,count2=0,count3=0;
 //console.log(complete.com_in1,complete.com_in2,complete.com_in3);
 window.onload=function(){
 	/*
@@ -38,15 +38,21 @@ document.getElementById('Page1b').addEventListener("click", toComment);
 document.getElementById('Page2b').addEventListener("click", toComment2);
 document.getElementById('Page3b').addEventListener("click", toComment3);
 function drawData1() {
+count1=count1+1;
 var data=data1;
+var counter1=document.getElementById('Count1');
 var output1=document.getElementById('Comment1');
 var output2=document.getElementById('Comment2');
  output1.innerHTML=data.phrases[complete.get_level1()].body;
  output2.innerHTML=data.phrases[complete.get_level1()+1].body;
+ counter1.innerHTML=count1;
 }
 
 function drawData2() {
+count2=count2+1;
 	var data=data2;
+	var counter2=document.getElementById('Count2');
+counter2.innerHTML=count2;
 var output1=document.getElementById('Comment1.2');
 var output2=document.getElementById('Comment2.2');
  output1.innerHTML=data.phrases[complete.get_level2()].body;
@@ -54,7 +60,10 @@ var output2=document.getElementById('Comment2.2');
 }
 
 function drawData3() {
-	var data=data3;
+count3=count3+1;
+var data=data3;
+var counter3=document.getElementById('Count3');
+counter3.innerHTML=count3;
 var output1=document.getElementById('Comment1.3');
 var output2=document.getElementById('Comment2.3');
  output1.innerHTML=data.phrases[complete.get_level3()].body;
